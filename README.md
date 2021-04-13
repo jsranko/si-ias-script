@@ -1,6 +1,11 @@
 # si-ias-script
 Manage IAS (integrated application server) programmatically (over CLI)
 
+## Set PATH
+```
+export PATH=/QOpenSys/pkgs/bin:$PATH
+```
+
 ## Set CLASSPATH
 ```
 export CLASSPATH=/QIBM/ProdData/OS400/jt400/lib/jt400Native.jar:/QIBM/ProdData/OS/OSGi/shared/lib/iasadmin.jar
