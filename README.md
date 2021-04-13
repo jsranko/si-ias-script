@@ -11,6 +11,11 @@ export PATH=/QOpenSys/pkgs/bin:$PATH
 export CLASSPATH=/QIBM/ProdData/OS400/jt400/lib/jt400Native.jar:/QIBM/ProdData/OS/OSGi/shared/lib/iasadmin.jar
 ```
 
+## Clone project
+```
+git clone https://github.com/jsranko/si-ias-script.git
+```
+
 ## Create server
 
 ```
