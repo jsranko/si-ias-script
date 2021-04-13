@@ -31,7 +31,26 @@ java com.ibm.lwi.admin.IntegratedServerAdmin -stopServer IASTEST1
 ```
 
 ## Install applicaiton
-
+Install your application. For example:
 ```
-java com.ibm.lwi.admin.IntegratedServerAdmin -stopServer IASTEST1
+wget -O /tmp/SampleWebApp.war https://github.com/AKSarav/SampleWebApp/raw/master/dist/SampleWebApp.war
+```
+Now install you war file application:
+```
+java com.ibm.lwi.admin.IntegratedServerAdmin -installApplication IASTEST1 /tmp/SampleWebApp.war
+```
+
+## Start applicaiton
+```
+java com.ibm.lwi.admin.IntegratedServerAdmin -startApplication IASTEST1 SampleWebApp
+```
+
+## Stop applicaiton
+```
+java com.ibm.lwi.admin.IntegratedServerAdmin -stopApplication IASTEST1 SampleWebApp
+```
+
+## Remove applicaiton
+```
+java com.ibm.lwi.admin.IntegratedServerAdmin -removeApplication IASTEST1 SampleWebApp
 ```
