@@ -26,6 +26,21 @@ und then create the server
 java com.ibm.lwi.admin.IntegratedServerAdmin -createServer createServer.properties
 ```
 
+## Install applicaiton
+Install your application. For example:
+```
+wget -O /tmp/SampleWebApp.war https://github.com/AKSarav/SampleWebApp/raw/master/dist/SampleWebApp.war
+```
+Now install you war file application:
+```
+java com.ibm.lwi.admin.IntegratedServerAdmin -installApplication IASTEST1 /tmp/SampleWebApp.war
+```
+
+## Start applicaiton
+```
+java com.ibm.lwi.admin.IntegratedServerAdmin -startApplication IASTEST1 SampleWebApp
+```
+
 ## Remove server
 ### Remove server by Name
 ```
@@ -42,21 +57,6 @@ java com.ibm.lwi.admin.IntegratedServerAdmin -startServer IASTEST1
 
 ```
 java com.ibm.lwi.admin.IntegratedServerAdmin -stopServer IASTEST1
-```
-
-## Install applicaiton
-Install your application. For example:
-```
-wget -O /tmp/SampleWebApp.war https://github.com/AKSarav/SampleWebApp/raw/master/dist/SampleWebApp.war
-```
-Now install you war file application:
-```
-java com.ibm.lwi.admin.IntegratedServerAdmin -installApplication IASTEST1 /tmp/SampleWebApp.war
-```
-
-## Start applicaiton
-```
-java com.ibm.lwi.admin.IntegratedServerAdmin -startApplication IASTEST1 SampleWebApp
 ```
 
 ## Stop applicaiton
