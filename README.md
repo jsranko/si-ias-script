@@ -16,8 +16,12 @@ export CLASSPATH=/QIBM/ProdData/OS400/jt400/lib/jt400Native.jar:/QIBM/ProdData/O
 git clone https://github.com/jsranko/si-ias-script.git
 ```
 
-## Create server
-
+## Configure and create server
+Change the base configuration 
+```
+nano createServer.properties
+```
+und then create the server
 ```
 java com.ibm.lwi.admin.IntegratedServerAdmin -createServer createServer.properties
 ```
